@@ -12,7 +12,7 @@ def contact():
     elif request.method == 'POST':
         print("We received POST")
         print(request.form)
-        return redirect('/mypage/me')
+        return redirect("/mypage/me")
 
 @app.route('/mypage/me')
 def about_me():

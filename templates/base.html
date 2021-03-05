@@ -3,11 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Agata's first website</title>
-        <link rel="stylesheet" href="8_1.css"> 
+        <link rel="stylesheet" href="{{ url_for('static', filename="8_1.css") }}"> 
     </head>
     <body>
         <h1>Witaj na mojej stronie domowej!</h1>
-        <img src= "C:\Users\aduna\OneDrive\Pulpit\kodilla\Python\static\logo.jpg" alt="obrazek" Title="panda">
+        <img src= "{{ url_for('static', filename="logo.jpg")}}" alt="obrazek" Title="panda">
         <div id="content">{% block content %}{% endblock %}</div>
     </body>
 </html>
